@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/020/305/295/non_2x/to-do-list-icon-vector.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To-Do List</title>
+</head>
+<body class="bg-[url('https://images.pexels.com/photos/1679768/pexels-photo-1679768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-gray-500  md:px-8 py-6 rounded-lg shadow-lg w-90">
+            <h1 class="text-center text-2xl font-bold text-blue-900 mb-4">To-Do List</h1>
+            <div class="mb-4">
+                <input id="taskInput" type="text" placeholder="Add Your Task ..." 
+                       class="w-full p-2 border rounded">
+                <button id="addTaskBtn" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-2 w-full">
+                    Add Task
+                </button>
+            </div>
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr>
+                        <th class="border-b p-2">Status</th>
+                        <th class="border-b p-2">Task</th>
+                        <th class="border-b p-2">Date</th>
+                        <th class="border-b p-2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="taskTableBody">
+                    <!-- Tasks will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
